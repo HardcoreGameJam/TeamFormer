@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224928058974069006}
   - component: {fileID: 222410849159373676}
-  - component: {fileID: 114413125516451278}
+  - component: {fileID: 114507972054349328}
   m_Layer: 5
   m_Name: NameContainer
   m_TagString: Untagged
@@ -45,7 +45,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114413125516451278
+--- !u!114 &114507972054349328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2b137305999b1584e8d2aa2ad3e35776, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a6207b242c564f87a2360967fa8b8c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
