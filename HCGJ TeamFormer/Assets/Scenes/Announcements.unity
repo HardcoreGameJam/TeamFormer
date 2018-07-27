@@ -540,7 +540,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '.......... .......... ..........'
+  m_Text: Elephant .......... ..........
 --- !u!1 &1515750335
 GameObject:
   m_ObjectHideFlags: 0
