@@ -65,38 +65,44 @@ public class HardcoreTeamFormer : MonoBehaviour {
             }
         }
 
-        // Create a screenshot
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            ScreenCapture.CaptureScreenshot(Application.dataPath + "/" + DateTime.Now.ToString("HHmmssfff") + ".jpg");
-        }
-
         // Reset button
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (tempSelectedParticipants >= TEAM_SIZE) 
+            CaptureScreenshot();
+            Invoke("FormTeam", 0.05f);
+        }
+    }
+
+    private void CaptureScreenshot()
+    {
+        ScreenCapture.CaptureScreenshot(Application.dataPath + "/" + DateTime.Now.ToString("HHmmssfff") + ".jpg");
+    }
+
+    private void FormTeam()
+    {
+        if (tempSelectedParticipants >= TEAM_SIZE)
+        {
+            // Update remaining participants
+            UpdateDrawnableParticipants();
+
+            // Reset audio and visuals, selectedParticipants count and start shuffling again
+            if (drawnableParticipants.Count > 0)
             {
-                // Update remaining participants
-                UpdateDrawnableParticipants();
-
-                // Reset audio and visuals, selectedParticipants count and start shuffling again
-                if (drawnableParticipants.Count > 0)
+                //audioSource.Play();
+                hackerAnimation.enabled = true;
+                foreach (Text nameField in nameFields)
                 {
-                    //audioSource.Play();
-                    hackerAnimation.enabled = true;
-                    foreach (Text nameField in nameFields)
-                    {
-                        nameField.text = "";
-                    }
-                    tempSelectedParticipants = 0;
-                    ResetShuffling();
+                    nameField.text = "";
                 }
 
-                // Log debug info
-                if (debugMode)
-                {
-                    PrintRemainingParticipantsCount();
-                }
+                tempSelectedParticipants = 0;
+                ResetShuffling();
+            }
+
+            // Log debug info
+            if (debugMode)
+            {
+                PrintRemainingParticipantsCount();
             }
         }
     }

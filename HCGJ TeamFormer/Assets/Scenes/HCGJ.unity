@@ -506,8 +506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMode: 1
-  lowerInterval: 0.1
-  upperInterval: 0.3
+  lowerInterval: 0.05
+  upperInterval: 0.1
   nameFields:
   - {fileID: 1501834213}
   - {fileID: 1178501294}
