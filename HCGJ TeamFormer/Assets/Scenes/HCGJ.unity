@@ -512,8 +512,9 @@ MonoBehaviour:
   - {fileID: 1501834213}
   - {fileID: 1178501294}
   - {fileID: 567297134}
+  - {fileID: 0}
   hackerAnimation: {fileID: 1724400054}
-  selectParticipantSfx: {fileID: 8300000, guid: 0a4c797d261025d4ba59059f03a59313,
+  selectParticipantSfx: {fileID: 8300000, guid: 9aabff8e6970a8c4b9884f3643816287,
     type: 3}
 --- !u!82 &750346559
 AudioSource:
@@ -525,7 +526,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c692e6b79956d064ba52eb9b883e7a3c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6e1f59e28c2840445aeeed6856879f3c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.75
   m_Pitch: 1
