@@ -5,7 +5,6 @@ public class HardcoreVariables : MonoBehaviour {
 
     public static List<string> artists = new List<string>
     {
-        "Elena Asenova",
         "Elena Korucheva",
         "Georgi Georgiev ♟",
         "Mihaela Komitova ♟",
